@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+
+    <div class="logo">
+        Tipid<span>Sulit</span>
+    </div>
+
+    <ul id="navLinks">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="price.html">Services</a></li>
+    <li><a href="booking.html">Booking</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html" class="active">Login</a></li>
+</ul>
+
+    <!-- BURGER -->
+    <div class="burger" id="burger">
+        ☰
+    </div>
+
+</nav>
+<div class="auth-container">
+
+    <form class="auth-form">
+
+        <h1>Create Account</h1>
+
+        <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter full name" class="placeholder">
+        </div>
+
+        <div class="input-box">
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" class="placeholder">
+        </div>
+
+        <div class="input-box">
+            <label>Password</label>
+            <input type="password" placeholder="Create password" class="placeholder">
+        </div>
+
+        <div class="input-box">
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Confirm password" class="placeholder">
+        </div>
+
+        <button type="submit" class="submit-btn">
+            Register
+        </button>
+
+        <p class="switch">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+
+    </form>
+
+</div>
+
+ <footer>
+        <p>© 2026 TipidSulit | All Rights Reserved</p>
+    </footer>
+
+    <script>
+
+const burger = document.getElementById("burger");
+const navLinks = document.getElementById("navLinks");
+
+burger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+</script>
+    
+</body>
+</html>

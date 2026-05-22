@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+
+    <div class="logo">
+       <a href="index.html"> Tipid<span>Sulit</span></a>
+    </div>
+
+   <ul id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="price.html">Services</a></li>
+    <li><a href="booking.html">Booking</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="login.html">Login</a></li>
+</ul>
+
+    <!-- BURGER -->
+    <div class="burger" id="burger">
+        ☰
+    </div>
+
+</nav>
+
+
+<section class="contact-section">
+
+    <!-- LEFT SIDE -->
+    <div class="social-side">
+
+        <h2>Connect With Us</h2>
+
+        <div class="contact-info">
+
+            <div class="contact-box">
+                <img src="image/fbb.png" width="50" height="50"><br>
+
+               <a href="https://www.facebook.com/tipidsulit.laundromat.1" alt="Facebbok page">TipidSulit Laundromat</a>
+                <p></p>
+            </div>
+
+            <div class="contact-box">
+          
+                <img src="image/gmail.png" width="50" height="50"><p>tslaundromatph@gmail.com</p>
+            </div>
+
+            <div class="contact-box">
+        
+               <img src="image/phone.png1.webp" width="50" height="50"> <p>+63 917 531 1256 / (02) 8776 9526</p>
+            </div>
+
+            <div class="contact-box">
+                 <img src="image/location.avif" width="50" height="50">
+                <p>Maysan, Valenzuela City, Philippines</p>
+            </div>
+
+        </div>
+
+        <p id="descrip">
+            Reach out to us for bookings, pickup and delivery services,
+            or any inquiries about our laundry services.
+        </p>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="form-side">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Feel free to send us a message for bookings,
+            questions, or service inquiries.
+        </p>
+
+        <form>
+
+            <div class="input-box">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+
+            <div class="input-box">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="input-box">
+                <textarea placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+ <footer>
+        <p>© 2026 TipidSulit | All Rights Reserved</p>
+    </footer>
+
+    <script>
+
+const burger = document.getElementById("burger");
+const navLinks = document.getElementById("navLinks");
+
+burger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+</script>
+
+</body>
+</html>
